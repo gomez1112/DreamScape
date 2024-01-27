@@ -19,7 +19,7 @@ DreamScape is a SwiftUI iOS application designed to offer a unique platform for 
 1. Clone the repo:
    ```sh
    git clone https://github.com/[your-username]/DreamScapeApp.git
-2. Open 'DreamScapeApp.xcodeproj' in xcode.
+2. Open `DreamScapeApp.xcodeproj` in xcode.
 3. Run the project on your chosen device or simulator
 
 ## Contributing
