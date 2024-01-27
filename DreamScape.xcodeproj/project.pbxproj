@@ -14,6 +14,9 @@
 		CC5177662B65C06B00A0F208 /* DreamScapeTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5177652B65C06B00A0F208 /* DreamScapeTests.swift */; };
 		CC5177702B65C06B00A0F208 /* DreamScapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51776F2B65C06B00A0F208 /* DreamScapeUITests.swift */; };
 		CC5177722B65C06B00A0F208 /* DreamScapeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5177712B65C06B00A0F208 /* DreamScapeUITestsLaunchTests.swift */; };
+		CC5177842B65C14C00A0F208 /* ChatGPTKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC5177832B65C14C00A0F208 /* ChatGPTKit */; };
+		CC5177862B65C79300A0F208 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC5177852B65C47800A0F208 /* Config.plist */; };
+		CC5177882B65C8AF00A0F208 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5177872B65C8AF00A0F208 /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +48,8 @@
 		CC51776B2B65C06B00A0F208 /* DreamScapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamScapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC51776F2B65C06B00A0F208 /* DreamScapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamScapeUITests.swift; sourceTree = "<group>"; };
 		CC5177712B65C06B00A0F208 /* DreamScapeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamScapeUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		CC5177852B65C47800A0F208 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		CC5177872B65C8AF00A0F208 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5177842B65C14C00A0F208 /* ChatGPTKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +81,7 @@
 		CC5177472B65C06A00A0F208 = {
 			isa = PBXGroup;
 			children = (
+				CC5177852B65C47800A0F208 /* Config.plist */,
 				CC5177522B65C06A00A0F208 /* DreamScape */,
 				CC5177642B65C06B00A0F208 /* DreamScapeTests */,
 				CC51776E2B65C06B00A0F208 /* DreamScapeUITests */,
@@ -95,8 +102,11 @@
 		CC5177522B65C06A00A0F208 /* DreamScape */ = {
 			isa = PBXGroup;
 			children = (
+				CC5177812B65C0D600A0F208 /* ViewModel */,
+				CC5177802B65C0D000A0F208 /* Extension */,
+				CC51777F2B65C0CB00A0F208 /* View */,
+				CC51777E2B65C0C500A0F208 /* Model */,
 				CC5177532B65C06A00A0F208 /* DreamScapeApp.swift */,
-				CC5177552B65C06A00A0F208 /* ContentView.swift */,
 				CC5177572B65C06B00A0F208 /* Assets.xcassets */,
 				CC5177592B65C06B00A0F208 /* DreamScape.entitlements */,
 				CC51775A2B65C06B00A0F208 /* Preview Content */,
@@ -129,6 +139,36 @@
 			path = DreamScapeUITests;
 			sourceTree = "<group>";
 		};
+		CC51777E2B65C0C500A0F208 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		CC51777F2B65C0CB00A0F208 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CC5177552B65C06A00A0F208 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CC5177802B65C0D000A0F208 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				CC5177872B65C8AF00A0F208 /* Bundle+Extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		CC5177812B65C0D600A0F208 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -145,6 +185,9 @@
 			dependencies = (
 			);
 			name = DreamScape;
+			packageProductDependencies = (
+				CC5177832B65C14C00A0F208 /* ChatGPTKit */,
+			);
 			productName = DreamScape;
 			productReference = CC5177502B65C06A00A0F208 /* DreamScape.app */;
 			productType = "com.apple.product-type.application";
@@ -217,6 +260,9 @@
 				Base,
 			);
 			mainGroup = CC5177472B65C06A00A0F208;
+			packageReferences = (
+				CC5177822B65C14C00A0F208 /* XCRemoteSwiftPackageReference "ChatGPTKit" */,
+			);
 			productRefGroup = CC5177512B65C06A00A0F208 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -234,6 +280,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC51775C2B65C06B00A0F208 /* Preview Assets.xcassets in Resources */,
+				CC5177862B65C79300A0F208 /* Config.plist in Resources */,
 				CC5177582B65C06B00A0F208 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -260,6 +307,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5177562B65C06A00A0F208 /* ContentView.swift in Sources */,
+				CC5177882B65C8AF00A0F208 /* Bundle+Extension.swift in Sources */,
 				CC5177542B65C06A00A0F208 /* DreamScapeApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -442,10 +490,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.DreamScape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Debug;
 		};
@@ -480,10 +529,11 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.transfinite.DreamScape;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = auto;
-				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator macosx xros xrsimulator";
+				SUPPORTS_MACCATALYST = NO;
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = "1,2,7";
 			};
 			name = Release;
 		};
@@ -617,6 +667,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		CC5177822B65C14C00A0F208 /* XCRemoteSwiftPackageReference "ChatGPTKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/heysaik/ChatGPTKit";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		CC5177832B65C14C00A0F208 /* ChatGPTKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC5177822B65C14C00A0F208 /* XCRemoteSwiftPackageReference "ChatGPTKit" */;
+			productName = ChatGPTKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = CC5177482B65C06A00A0F208 /* Project object */;
 }

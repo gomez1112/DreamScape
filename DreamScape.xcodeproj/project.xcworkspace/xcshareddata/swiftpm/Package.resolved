@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "chatgptkit",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/heysaik/ChatGPTKit",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0249807759026741e659f9adff00a6691f619b1d"
+      }
+    }
+  ],
+  "version" : 2
+}
