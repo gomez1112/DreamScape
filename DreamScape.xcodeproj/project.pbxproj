@@ -15,7 +15,6 @@
 		CC5177702B65C06B00A0F208 /* DreamScapeUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51776F2B65C06B00A0F208 /* DreamScapeUITests.swift */; };
 		CC5177722B65C06B00A0F208 /* DreamScapeUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5177712B65C06B00A0F208 /* DreamScapeUITestsLaunchTests.swift */; };
 		CC5177842B65C14C00A0F208 /* ChatGPTKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC5177832B65C14C00A0F208 /* ChatGPTKit */; };
-		CC5177862B65C79300A0F208 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC5177852B65C47800A0F208 /* Config.plist */; };
 		CC5177882B65C8AF00A0F208 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5177872B65C8AF00A0F208 /* Bundle+Extension.swift */; };
 /* End PBXBuildFile section */
 
@@ -48,7 +47,6 @@
 		CC51776B2B65C06B00A0F208 /* DreamScapeUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DreamScapeUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		CC51776F2B65C06B00A0F208 /* DreamScapeUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamScapeUITests.swift; sourceTree = "<group>"; };
 		CC5177712B65C06B00A0F208 /* DreamScapeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamScapeUITestsLaunchTests.swift; sourceTree = "<group>"; };
-		CC5177852B65C47800A0F208 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		CC5177872B65C8AF00A0F208 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -81,7 +79,6 @@
 		CC5177472B65C06A00A0F208 = {
 			isa = PBXGroup;
 			children = (
-				CC5177852B65C47800A0F208 /* Config.plist */,
 				CC5177522B65C06A00A0F208 /* DreamScape */,
 				CC5177642B65C06B00A0F208 /* DreamScapeTests */,
 				CC51776E2B65C06B00A0F208 /* DreamScapeUITests */,
@@ -280,7 +277,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC51775C2B65C06B00A0F208 /* Preview Assets.xcassets in Resources */,
-				CC5177862B65C79300A0F208 /* Config.plist in Resources */,
 				CC5177582B65C06B00A0F208 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
