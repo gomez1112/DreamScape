@@ -13,7 +13,7 @@ final class Dream {
     var title: String
     var detail: String?
     var date: Date
-    var mood: Mood
+    var category: Category?
     var isNightmare = false
     var sleepQuality: SleepQuality
     var analysis: Analysis
@@ -23,19 +23,14 @@ final class Dream {
     var photoData: Data?
     var location: String?
     
-    init(title: String, detail: String? = nil, date: Date, mood: Mood, sleepQuality: SleepQuality, analysis: Analysis, symbol: String) {
+    init(title: String, detail: String? = nil, date: Date, category: Category?, sleepQuality: SleepQuality, analysis: Analysis, symbol: String) {
         self.title = title
         self.detail = detail
         self.date = date
-        self.mood = mood
+        self.category = category
         self.sleepQuality = sleepQuality
         self.analysis = analysis
         self.symbol = symbol
-    }
-    
-    enum Mood: String, Codable, Identifiable, CaseIterable {
-        case happy, scared, confused, sad, indifferent
-        var id: Self { self }
     }
     enum SleepQuality: Int, Codable {
         case poor = 1
