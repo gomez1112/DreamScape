@@ -17,6 +17,8 @@
 		CC5177842B65C14C00A0F208 /* ChatGPTKit in Frameworks */ = {isa = PBXBuildFile; productRef = CC5177832B65C14C00A0F208 /* ChatGPTKit */; };
 		CC5177882B65C8AF00A0F208 /* Bundle+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5177872B65C8AF00A0F208 /* Bundle+Extension.swift */; };
 		CC51778A2B65D46000A0F208 /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = CC5177892B65D46000A0F208 /* Config.plist */; };
+		CC51778C2B65D5C300A0F208 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51778B2B65D5C300A0F208 /* Dream.swift */; };
+		CC51778E2B65D83300A0F208 /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51778D2B65D83300A0F208 /* Analysis.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,6 +52,8 @@
 		CC5177712B65C06B00A0F208 /* DreamScapeUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DreamScapeUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		CC5177872B65C8AF00A0F208 /* Bundle+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Bundle+Extension.swift"; sourceTree = "<group>"; };
 		CC5177892B65D46000A0F208 /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		CC51778B2B65D5C300A0F208 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
+		CC51778D2B65D83300A0F208 /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -142,6 +146,8 @@
 		CC51777E2B65C0C500A0F208 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				CC51778B2B65D5C300A0F208 /* Dream.swift */,
+				CC51778D2B65D83300A0F208 /* Analysis.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -309,6 +315,8 @@
 				CC5177562B65C06A00A0F208 /* ContentView.swift in Sources */,
 				CC5177882B65C8AF00A0F208 /* Bundle+Extension.swift in Sources */,
 				CC5177542B65C06A00A0F208 /* DreamScapeApp.swift in Sources */,
+				CC51778C2B65D5C300A0F208 /* Dream.swift in Sources */,
+				CC51778E2B65D83300A0F208 /* Analysis.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
