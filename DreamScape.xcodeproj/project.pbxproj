@@ -20,6 +20,9 @@
 		CC51778C2B65D5C300A0F208 /* Dream.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51778B2B65D5C300A0F208 /* Dream.swift */; };
 		CC51778E2B65D83300A0F208 /* Analysis.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51778D2B65D83300A0F208 /* Analysis.swift */; };
 		CC5177902B65DB0400A0F208 /* Category.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC51778F2B65DB0400A0F208 /* Category.swift */; };
+		CC5177922B666EF700A0F208 /* Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC5177912B666EF700A0F208 /* Home.swift */; };
+		CC5177952B668AE400A0F208 /* Lottie in Frameworks */ = {isa = PBXBuildFile; productRef = CC5177942B668AE400A0F208 /* Lottie */; };
+		CC5177982B668B0700A0F208 /* dreamAnimation.json in Resources */ = {isa = PBXBuildFile; fileRef = CC5177972B668B0700A0F208 /* dreamAnimation.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,8 @@
 		CC51778B2B65D5C300A0F208 /* Dream.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Dream.swift; sourceTree = "<group>"; };
 		CC51778D2B65D83300A0F208 /* Analysis.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Analysis.swift; sourceTree = "<group>"; };
 		CC51778F2B65DB0400A0F208 /* Category.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Category.swift; sourceTree = "<group>"; };
+		CC5177912B666EF700A0F208 /* Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Home.swift; sourceTree = "<group>"; };
+		CC5177972B668B0700A0F208 /* dreamAnimation.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = dreamAnimation.json; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +69,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CC5177842B65C14C00A0F208 /* ChatGPTKit in Frameworks */,
+				CC5177952B668AE400A0F208 /* Lottie in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -108,6 +114,7 @@
 		CC5177522B65C06A00A0F208 /* DreamScape */ = {
 			isa = PBXGroup;
 			children = (
+				CC5177962B668AEA00A0F208 /* Resource */,
 				CC5177812B65C0D600A0F208 /* ViewModel */,
 				CC5177802B65C0D000A0F208 /* Extension */,
 				CC51777F2B65C0CB00A0F208 /* View */,
@@ -159,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				CC5177552B65C06A00A0F208 /* ContentView.swift */,
+				CC5177912B666EF700A0F208 /* Home.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -176,6 +184,14 @@
 			children = (
 			);
 			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CC5177962B668AEA00A0F208 /* Resource */ = {
+			isa = PBXGroup;
+			children = (
+				CC5177972B668B0700A0F208 /* dreamAnimation.json */,
+			);
+			path = Resource;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -196,6 +212,7 @@
 			name = DreamScape;
 			packageProductDependencies = (
 				CC5177832B65C14C00A0F208 /* ChatGPTKit */,
+				CC5177942B668AE400A0F208 /* Lottie */,
 			);
 			productName = DreamScape;
 			productReference = CC5177502B65C06A00A0F208 /* DreamScape.app */;
@@ -271,6 +288,7 @@
 			mainGroup = CC5177472B65C06A00A0F208;
 			packageReferences = (
 				CC5177822B65C14C00A0F208 /* XCRemoteSwiftPackageReference "ChatGPTKit" */,
+				CC5177932B668AE400A0F208 /* XCRemoteSwiftPackageReference "lottie-ios" */,
 			);
 			productRefGroup = CC5177512B65C06A00A0F208 /* Products */;
 			projectDirPath = "";
@@ -288,6 +306,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CC5177982B668B0700A0F208 /* dreamAnimation.json in Resources */,
 				CC51775C2B65C06B00A0F208 /* Preview Assets.xcassets in Resources */,
 				CC51778A2B65D46000A0F208 /* Config.plist in Resources */,
 				CC5177582B65C06B00A0F208 /* Assets.xcassets in Resources */,
@@ -321,6 +340,7 @@
 				CC51778C2B65D5C300A0F208 /* Dream.swift in Sources */,
 				CC51778E2B65D83300A0F208 /* Analysis.swift in Sources */,
 				CC5177902B65DB0400A0F208 /* Category.swift in Sources */,
+				CC5177922B666EF700A0F208 /* Home.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -689,6 +709,14 @@
 				kind = branch;
 			};
 		};
+		CC5177932B668AE400A0F208 /* XCRemoteSwiftPackageReference "lottie-ios" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/airbnb/lottie-ios.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.4.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -696,6 +724,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CC5177822B65C14C00A0F208 /* XCRemoteSwiftPackageReference "ChatGPTKit" */;
 			productName = ChatGPTKit;
+		};
+		CC5177942B668AE400A0F208 /* Lottie */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CC5177932B668AE400A0F208 /* XCRemoteSwiftPackageReference "lottie-ios" */;
+			productName = Lottie;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
